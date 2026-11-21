@@ -1,0 +1,310 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 4
+/Kids [ 4 0 R 10 0 R 13 0 R 15 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 2445
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.839216 .862745 .886275 RG
+.5 w
+n 48.18898 36.85039 m 547.0866 36.85039 l S
+BT /F1 7.5 Tf 9 TL ET
+.4 .4 .4 rg
+BT 1 0 0 1 48.18898 24.09449 Tm (SIMATS \226 Python Programming Assignment 2) Tj T* ET
+BT 1 0 0 1 523.3191 24.09449 Tm (Page 1) Tj T* ET
+Q
+q
+1 0 0 1 54.18898 708.3307 cm
+Q
+q
+1 0 0 1 54.18898 690.3307 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 188.4388 0 Td (SIMATS ENGINEERING) Tj T* -188.4388 0 Td ET
+Q
+Q
+q
+1 0 0 1 54.18898 659.8189 cm
+Q
+q
+1 0 0 1 54.18898 603.8189 cm
+q
+BT 1 0 0 1 0 29 Tm 114.5298 0 Td 25 TL /F2 21 Tf .12549 .231373 .34902 rg (PYTHON PROGRAMMING) Tj  T* 41.40152 0 Td (ASSIGNMENT \226 2) Tj T* -155.9313 0 Td ET
+Q
+Q
+q
+1 0 0 1 54.18898 583.8189 cm
+q
+.2 .2 .2 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 167.9503 0 Td (Complete programs for Q1\226Q7) Tj T* -167.9503 0 Td ET
+Q
+Q
+q
+1 0 0 1 54.18898 541.9685 cm
+Q
+q
+1 0 0 1 54.18898 509.9685 cm
+q
+BT 1 0 0 1 0 17 Tm 10.90232 0 Td 13 TL /F2 9 Tf .133333 .133333 .133333 rg (Topics:) Tj /F1 9 Tf ( Decisions and boundaries \177 Loops \177 String validation \177 Text construction \177 Functions and scope \177 Recursion \177) Tj T* 198.0315 0 Td (Iterative redesign) Tj T* -208.9338 0 Td ET
+Q
+Q
+q
+1 0 0 1 54.18898 456.7795 cm
+Q
+q
+1 0 0 1 54.18898 438.7795 cm
+q
+BT 1 0 0 1 0 3.3 Tm 12 TL /F2 8.7 Tf .133333 .133333 .133333 rg (Student name:) Tj /F1 8.7 Tf ( ______________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 420.7795 cm
+q
+BT 1 0 0 1 0 3.3 Tm 12 TL /F2 8.7 Tf .133333 .133333 .133333 rg (Register number:) Tj /F1 8.7 Tf ( ___________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 402.7795 cm
+q
+BT 1 0 0 1 0 3.3 Tm 12 TL /F2 8.7 Tf .133333 .133333 .133333 rg (Course Code / Slot:) Tj /F1 8.7 Tf ( _________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 358.0945 cm
+Q
+q
+1 0 0 1 54.18898 332.0945 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 12 Tm /F1 8 Tf 10 TL (Complete program code based on the questions visible in the supplied assignment. Run the programs on your computer and record your) Tj T* (own output and timings where required.) Tj T* ET
+Q
+Q
+ 
+
+Q
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+116 438.7898 147.1 11.7 re
+f*
+0 0 0 rg
+BT
+/F1-0 8.7 Tf
+10.44 TL
+ET
+BT
+1 0 0 1 117 442.4898 Tm
+(Jovin Josh) Tj
+T*
+ET
+1 1 1 rg
+n
+127.6 420.7898 132.6 11.7 re
+f*
+0 0 0 rg
+BT
+/F1-0 8.7 Tf
+10.44 TL
+ET
+BT
+1 0 0 1 128.6 424.4898 Tm
+(192511471) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Contents 11 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 12 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+11 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 734
+>>
+stream
+Gat$t?#Q2d'Rf.G>Xb*G9['ohpU!\1[<A"G:?fXMQm.t9l7&+FQra%WZ[jCKct"@,8+nt;S9o&c_"pQin#?AtNoAu`!20s:5[<A:r"X*Yl]6`d-_eNa'`'Y*4[#5u*dn!(+V1.r!H*]a(e,Z.4pjI>6r8Es"pg!uJ!f!+_Wk)%:"1pqVkM)`=69]Q3c"Vue3u?;>n&Gp](g;i'e^]'e;*j#4dH03ZHQl`'O9^<<E2-t"VV7,%,tV*^GQY;Z6".M6R"9:4&9oU@,1)!pCt)X&d0$T(l(.-P74.VVBb@;-ZB&GDM784-87EVrl$J>WA`E6VX*J0Bj:AN<kRFgW8O)E8%;42(9YhaXAd5D2=NEia<Q+''\`9r'?"FQ27oqQghbV88\X2!$W[.%nb![ML?JJcDp2HlR7)=4N9^4VX;F!:b9IjLSZOhlag+e[WD[Oq:M%*JDD2JN#=,8D88Hu--\`Ju+n?T8CR4?--du7<<S8KnV/onE;Rs5%n)gp'@WE@GAG1K8G7+3*))McsE!Z[-iM(TC;md;n=gS6o!Pmc8i6sEp#5#PJYP0nr*/^Y`>r.ZhYfZcaM/VK8]5cQJiP-<P'0[Sni"W5617.K?^eCUdBH(hf?*bK5R=,2]rre0irAoNKSb%Zd1A&5C5/bO%+M>CO(9h0G3Clj$$lGLB)_*2ET&g$B3/>-8>B6ED*;U\pL<7&g'78fMN*hkk0:<jI20Tt?^N\RqJc~>
+endstream
+endobj
+12 0 obj
+<<
+/F1 6 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+endobj
+13 0 obj
+<<
+/Contents 14 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 12 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 952
+>>
+stream
+Gb"/$?#SFN'Rf.GgngGB>O0:K5103lX*'l^Blo?AQUk*V!uZrd3MBIQrN8Kh$)"`mo0Pj\p:9AAF0?Sk-@TY$4j<sZ6TDiX5V39)5]'stGQXSUhObkZ=^Y)CM!nN=mGLqCE8]oG*c^,C-c#E^p&2Z2jq?Q+=TB=![RX$KFa%=Eh">Ct%tR7be/V#f\^a$MTXD.D=N`%'@,&1RKDs]Yn"]@^,0P"8r)>;FJ?b7F'k^Yn(,.4qA0E]\9!AL2reBopVJ([+/4LHcBK,9;?>s:(`%@k#L"NdGcSLDjRQaoPSY;@%E+1QE49gJlJSFKt@04pJc`\pB[IVnt=ncj:9aWgWjoq!m\:cBC7b+9>jB5e)*@]%JYb3SfK$D!T:S!IFWr8Mj'h80q=YAZaX!3\#J2g9b,H=S16R&C*.6]=L823\GZ%=(V(sl-Fn:JGe2,sU0RD`Y_9XT$F=3F^=O6)Nl&SHC3/*MZ4V;b39IC0gl91<14O?"(bFb]A*8r(MtoOg(B<P5`SoB9fT!V7_=/&8CXW4'JhDWS]nca<qur9=3#RA;t1f9tO>162XWX^]'rY3Q-*@!3kHk\g51YV&aZkS@6IL=eoTlS@`ETCn"`B*^s`+9f?E8,[,J5W`q8AA3tA!JYSbZ+4n?#T\@qUaJ.V<J\t[*Q9(A.Rfb]21LmCQ;K;,d2c&oS34hU;*8/*VqtVSnH.nt]]&[_,jt\Yn^'8Oiq>BX>4<c2RlI0WAJM"]]#&!_kCAtNLWd9iL!d#!'qs/I\G0o8Ufm!)Ha1jCfGfYIV0>kfBDZ-0FTUG[cQOoAqUe0O8W*Bt.@NR^i;eY%ND'hVCmm:^lXPsfWGt#h<n"^.Y&3puhjOG0QN#dJYNslDi9p,J=LRNoZ^pUmKG#t0=WQcEpajBC<qGH578pPXAZKIm7,U?jOUo).O2VOs`#j02a<=FR&qJhG'E(:V~>
+endstream
+endobj
+15 0 obj
+<<
+/Contents 16 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 12 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+16 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 934
+>>
+stream
+GatU0CJW\='`HlqE><1c]!]P$hOU$5Zn\7?<?U<06-*itO=<a_-QV^FGFcI2[#@0E8?7+)F3ZrCg'fCD=nS:q!%/p0SMFRm_AP%sfFXXlVm,cf6[UEBbQ["<gp8%!eUJRKqV35(4EbbLIDU@rnA0.%mnbNb$ln"He9B_S/;<E8R`31(8/&'bODOSeZ!P8td^HC8-8_rD>b6LlI<I=RY9Do\L%06[0[F1/k-5P%QK0b/M^"#L9]dYj/qi+*I&e]2YR\-u`<+VD*K+$O?/'@UV/NiqCF,QBM+=P+Q>'tKGAoY&(:-+2Lh-gU[u-hdC&F`)NilF>HFdk_dTVoT,9N(?.cF">8Pps7-<SW.R=18+DFBpe76+EY=bh\kX=fILlLTTCVQHIjbsj-h$X!IMC\olDN_Trnq%S]CRHW9c:S6N34pNCoAL\D8VhL;to/n\IldDlMhb&5O<cU*"R4(]g*=F1%*]AJ9Z9>F2Lk:n6$\sLOnNLqCoi!k<D$ZOVKoF5R5*\uhY`WJu^6C18.L2Lg8hO!r_1`(14YVhn>7:*_U#f`,<FeST%F4*?d3Zd1:YhJ\6q>sAaUD(8Y>_C$KHu>o%!o^&HYlL4WCRD"BA7rNKF7+4%eq&9$BZq^K[s0]8LO;Keqn)R-`'T9$Va@enM(/"!bacEi#ENl%"a4q#)G\0=('k%YjR%hK=HoDXQJeSfC2+6Wb213G;V\+g$!$mIeM1a?aHtNn.'Ekn@<76,G<k/"J!<ah\l.n'Q,_bmO5NO'd?kXGS;(7D1g%\F.`PiDg5Vk[aAk;^C:"(oe60+;QlW!8&=]Ud&(abS6'Y`4P;c32DgiS:Jg%J+.osJp8O'LC[L?Gimu1&n4kL7"J4rY#<^hPWOHLd.U)LKpU2q%Q2A1-BG'U7hf%"JKQ4T6pBIR+Dch5!eP-CA?eg)%e,~>
+endstream
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000134 00000 n 
+0000000183 00000 n 
+0000000436 00000 n 
+0000002933 00000 n 
+0000003040 00000 n 
+0000003147 00000 n 
+0000003259 00000 n 
+0000003364 00000 n 
+0000003566 00000 n 
+0000004392 00000 n 
+0000004444 00000 n 
+0000004646 00000 n 
+0000005690 00000 n 
+0000005892 00000 n 
+trailer
+<<
+/Size 17
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+6918
+%%EOF
