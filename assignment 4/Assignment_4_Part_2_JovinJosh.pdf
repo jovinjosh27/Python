@@ -1,0 +1,1864 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 6
+/Kids [ 3 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Contents 22 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F1-0 6 0 R
+/F2 7 0 R
+/F2-0 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 5823
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 6) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 769.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (PART 2 \227 TASKS 4\2266) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 739.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Task 4: File and Exception Forensics) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 717.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.1 \227 Locate the defects) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 646.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 55.8 Tm /F1 9.2 Tf 13 TL (1. The log is opened in write mode \('w'\), so every run erases earlier days. Use append mode \('a'\). 2. log.write\(b\) is) Tj T* (given a list instead of a string; it raises TypeError. 3. A newline is not added, so separate book names may be joined) Tj T* (together. 4. The file is closed only on the normal path; an error can leave it open. 5. The except block catches only) Tj T* (FileNotFoundError and does not save a useful error message. 6. If write\(\) fails, the program stops before closing the) Tj T* (log. 7. The code does not validate or report damaged input lines.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 624.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.2 \227 Test the defects) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 579.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 29.8 Tm /F1 9.2 Tf 13 TL (Run process\(\) for three daily files. The first file writes its book list, the second run overwrites the first day's data) Tj T* (because mode 'w' is used, and the third run can fail when write\(\) receives a list. A missing daily file prints 'missing' but) Tj T* (no error is recorded in the log. The repaired program below demonstrates all these cases safely.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 557.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.3 \227 Repaired program) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 318.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 226.9 Tm /F3 7.1 Tf 9 TL (from pathlib import Path) Tj T* (def save_returns\(books, log_name="returns.log"\):) Tj T* (with open\(log_name, "a", encoding="utf-8"\) as log:) Tj T* (for book in books:) Tj T* (log.write\(str\(book\).strip\(\) + "\\\\n"\)) Tj T* (def process\(day_file, log_name="returns.log",) Tj T* (error_name="returns_errors.log"\):) Tj T* (try:) Tj T* (with open\(day_file, "r", encoding="utf-8"\) as source:) Tj T* (books = [line.strip\(\) for line in source if line.strip\(\)]) Tj T* (save_returns\(books, log_name\)) Tj T* (return True) Tj T* (except FileNotFoundError:) Tj T* (message = f"Missing input file: {day_file}") Tj T* (except PermissionError:) Tj T* (message = f"Permission denied: {day_file}") Tj T* (except UnicodeDecodeError:) Tj T* (message = f"Invalid encoding: {day_file}") Tj T* (except OSError as error:) Tj T* (message = f"File error for {day_file}: {error}") Tj T* (with open\(error_name, "a", encoding="utf-8"\) as error_log:) Tj T* (error_log.write\(message + "\\\\n"\)) Tj T* (return False) Tj T* (if __name__ == "__main__":) Tj T* (for name in \("day1.txt", "day2.txt", "day3.txt"\):) Tj T* (process\(name\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 296.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.4 \227 Two prevention rules) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 212.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 68.8 Tm /F1 9.2 Tf 13 TL (1. Always use a with statement to open files so they are closed automatically, even when an exception occurs. 2.) Tj T* (Choose the correct file mode and write one string per record with a newline; validate data and log specific errors) Tj T* (instead of silently ignoring them. Alternative concept and complexity A with statement handles closing automatically.) Tj T* (Manual open\(\)/close\(\) inside try/finally can also be correct if close\(\) is placed in finally, but it is easier to forget. Both) Tj T* -0.109159 Tw (approaches have O\(n\) processing time for n book records and O\(1\) extra working space when records are streamed. If) Tj T* 0 Tw (an error occurs, a context manager reliably closes the file; manual closing depends on correct finally logic.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 182.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Task 5: The Same Utility Organised Four Ways) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 160.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 5.1 \227 Four organisations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 128.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.8 Tm /F1 9.2 Tf 13 TL (The attendance utility has three responsibilities: reading daily files, computing statistics and writing reports. The four) Tj T* (designs below use the same functions but organise them differently. A. One script \227 attendance_one.py) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 46.9 Tm /F3 7.1 Tf 9 TL (def read_attendance\(path\):) Tj T* (# Read and validate records; return a list of \(reg, date, status\).) Tj T* (records = []) Tj T* (with open\(path, encoding="utf-8"\) as file:) Tj T* (for line in file:) Tj T* (parts = line.strip\(\).split\(","\)) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 A\056 Mohamed Afridi) Tj
+T*
+ET
+BT
+1 0 0 1 432.0615 817.8898 Tm
+(Register No\072 1912260277) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+5 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Symbol
+/Name /F4
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/Contents 23 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F1-0 6 0 R
+/F2 7 0 R
+/F2-0 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 4773
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 7) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 625.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 154.9 Tm /F3 7.1 Tf 9 TL (if len\(parts\) == 3 and parts[2] in \("P", "A"\):) Tj T* (records.append\(tuple\(parts\)\)) Tj T* (return records) Tj T* (def compute_stats\(records\):) Tj T* (stats = {}) Tj T* (for reg, date, status in records:) Tj T* (stats.setdefault\(reg, {"P": 0, "A": 0}\)) Tj T* (stats[reg][status] += 1) Tj T* (return stats) Tj T* (def write_report\(stats, path\):) Tj T* (with open\(path, "w", encoding="utf-8"\) as file:) Tj T* (for reg, counts in sorted\(stats.items\(\)\):) Tj T* (total = counts["P"] + counts["A"]) Tj T* (percent = counts["P"] * 100 / total if total else 0) Tj T* (file.write\(f"{reg},{counts['P']},{counts['A']},{percent:.1f}%\\\\n"\)) Tj T* (if __name__ == "__main__":) Tj T* (data = read_attendance\("day1.csv"\)) Tj T* (write_report\(compute_stats\(data\), "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 603.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (B. One module imported by a main script) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 535.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 55.9 Tm /F3 7.1 Tf 9 TL (# attendance.py contains read_attendance, compute_stats, write_report) Tj T* (# main.py) Tj T* (import attendance) Tj T* (if __name__ == "__main__":) Tj T* (records = attendance.read_attendance\("day1.csv"\)) Tj T* (stats = attendance.compute_stats\(records\)) Tj T* (attendance.write_report\(stats, "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 514.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (C. Three modules in one folder attendance_project/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 409.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 91.9 Tm /F3 7.1 Tf 9 TL (main.py) Tj T* (reader.py       # read_attendance\(\)) Tj T* (stats.py        # compute_stats\(\)) Tj T* (report.py       # write_report\(\)) Tj T* (# main.py) Tj T* (from reader import read_attendance) Tj T* (from stats import compute_stats) Tj T* (from report import write_report) Tj T* (if __name__ == "__main__":) Tj T* (records = read_attendance\("day1.csv"\)) Tj T* (write_report\(compute_stats\(records\), "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 388.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (D. Package with submodules attendance/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 346.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 28.9 Tm /F3 7.1 Tf 9 TL (__init__.py) Tj T* (reader.py) Tj T* (stats.py) Tj T* (report.py) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 325.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (main.py) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 256.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 55.9 Tm /F3 7.1 Tf 9 TL (# main.py) Tj T* (from attendance.reader import read_attendance) Tj T* (from attendance.stats import compute_stats) Tj T* (from attendance.report import write_report) Tj T* (if __name__ == "__main__":) Tj T* (records = read_attendance\("day1.csv"\)) Tj T* (write_report\(compute_stats\(records\), "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 234.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 5.2 \227 Add the second report) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 202.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.8 Tm /F1 9.2 Tf 13 TL (Add a function to each design that identifies students absent for three consecutive days. The input records should be) Tj T* (ordered by date for each student. A simple implementation is:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 187.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (def absent_three_consecutive\(records\):) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 80.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 91.9 Tm /F3 7.1 Tf 9 TL (# records: \(register_number, date, status\), in date order) Tj T* (streak = {}) Tj T* (result = set\(\)) Tj T* (for reg, date, status in records:) Tj T* (if status == "A":) Tj T* (streak[reg] = streak.get\(reg, 0\) + 1) Tj T* (if streak[reg] >= 3:) Tj T* (result.add\(reg\)) Tj T* (else:) Tj T* (streak[reg] = 0) Tj T* (return sorted\(result\)) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 A\056 Mohamed Afridi) Tj
+T*
+ET
+BT
+1 0 0 1 432.0615 817.8898 Tm
+(Register No\072 1912260277) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+13 0 obj
+<<
+/Contents 24 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F1-0 6 0 R
+/F2 7 0 R
+/F2-0 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 6850
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 8) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 761.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.8 Tm /F1 9.2 Tf 13 TL (Call this function after reading the monthly records and write its returned register numbers to a second file,) Tj T* (consecutive_absentees.txt. For the package design, place the function in stats.py and import it in main.py.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 739.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 5.3 \227 Compare the organisations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 577.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 146.8 Tm /F1 9.2 Tf 13 TL (A single script is easiest for a very small program but becomes difficult to read, test and maintain. One module) Tj T* (separates the main program from utility functions and supports reuse. Three modules separate reading, statistics and) Tj T* (reporting, so each can be tested independently. A package is the clearest choice for a growing project: it groups) Tj T* (related modules under one namespace and scales well. Avoid naming a module statistics.py if it may conflict with) Tj T* (Python's standard-library statistics module; use attendance_stats.py instead. Import attendance.stats loads the) Tj T* -0.025847 Tw (submodule; importing a function directly can make the call shorter. In general, modules are loaded once and cached in) Tj T* 0 Tw (sys.modules, so later imports reuse the loaded module. Alternative concept and complexity Keeping all functions in) Tj T* (one script avoids module-import overhead and is simplest to distribute, but changes to one part can affect the whole) Tj T* -0.074323 Tw (file. A package has a small one-time import cost and uses memory for loaded module objects, but does not change the) Tj T* 0 Tw (Big-O complexity of reading or processing attendance data. Finding a function is easier when responsibilities are) Tj T* (separated and names are clear. The same function should be changed in one module rather than copied into four) Tj T* (places.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 547.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Task 6: Design Challenge \227 College Fest Registration Desk) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 517.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 1 \227 Interpret the problem) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 444.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 55.8 Tm /F1 9.2 Tf 13 TL (Inputs: five department text files. Each valid line contains register number, name, department, e-mail and a) Tj T* (semicolon-separated event list. Outputs: a clean master list, one participant file per event, a summary report and an) Tj T* (error log. Testable rules: accept only complete records; validate e-mail format; remove duplicate registrations by) Tj T* (register number; preserve valid events; record damaged lines with source filename and line number; continue after a) Tj T* (missing file or bad line; create output files even when some inputs are missing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 414.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 2 \227 Processing flow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 354.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 42.8 Tm /F1 9.2 Tf 13 TL -0.115428 Tw (For each of the five department files: open it safely ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( read line by line ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( split fields ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( validate field count and required) Tj T* 0 Tw (values ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( validate e-mail ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( check duplicate register number ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( clean and store valid registration ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( add the student to) Tj T* (each selected event list. For each failure, write the reason to the error log and continue. After all files: write master list) Tj T* /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( write event-wise lists ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( write summary counts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 324.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 3 \227 Critical design decisions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 251.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 55.8 Tm /F1 9.2 Tf 13 TL -0.02255 Tw (Duplicate rule: register number is the unique key. Store accepted register numbers in a set; set membership is O\(1\) on) Tj T* 0 Tw (average. E-mail validation: use string methods to check that there is exactly one '@', non-empty text before it, a dot in) Tj T* -0.05605 Tw (the domain, and no spaces. This is a simple classroom validation, not a complete internet e-mail standard. Exceptions:) Tj T* 0 Tw (catch FileNotFoundError, PermissionError, UnicodeDecodeError and other OSError around each input file; catch) Tj T* (malformed-line validation errors around each line. Log the file and line number.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 221.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 4 \227 Package structure) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 200.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (fest_registration/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 140.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 46.9 Tm /F3 7.1 Tf 9 TL (__init__.py) Tj T* (reader.py       # read_department_file\(\)) Tj T* (validator.py    # validate_record\(\), valid_email\(\)) Tj T* (processor.py    # remove_duplicates\(\), build_event_lists\(\)) Tj T* (writer.py       # write_master\(\), write_events\(\), write_summary\(\)) Tj T* (main.py         # coordinates the complete process) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 119.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (data/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 104.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (department1.txt ... department5.txt) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 83.70079 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (output/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (master.csv) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 A\056 Mohamed Afridi) Tj
+T*
+ET
+BT
+1 0 0 1 432.0615 817.8898 Tm
+(Register No\072 1912260277) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+15 0 obj
+<<
+/Contents 25 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F1-0 6 0 R
+/F2 7 0 R
+/F2-0 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 4709
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 9) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 778.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (events/) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 752.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 10.9 Tm /F3 7.1 Tf 9 TL (summary.txt) Tj T* (errors.log) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 730.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Pseudocode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 482.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 235.9 Tm /F3 7.1 Tf 9 TL (INITIALISE accepted_by_register = {}) Tj T* (INITIALISE seen_registers = empty set) Tj T* (INITIALISE event_participants = empty dictionary) Tj T* (INITIALISE errors = empty list) Tj T* (FOR each department input file:) Tj T* (TRY to open file using UTF-8 and a with statement) Tj T* (IF file is missing or unreadable:) Tj T* (record file-level error; continue to next file) Tj T* (FOR each line and line number:) Tj T* (TRY:) Tj T* (split line into exactly 5 fields) Tj T* (strip whitespace from each field) Tj T* (validate register, name, department and e-mail) Tj T* (IF register is already in seen_registers:) Tj T* (record duplicate error; continue) Tj T* (add register to seen_registers) Tj T* (store cleaned student in accepted_by_register) Tj T* (split events using semicolon) Tj T* (FOR each non-empty event:) Tj T* (add student to event_participants[event]) Tj T* (EXCEPT invalid-record error:) Tj T* (record filename, line number and reason) Tj T* (WRITE accepted_by_register as master.csv) Tj T* (FOR each event:) Tj T* (WRITE its participants to a separate event file) Tj T* (WRITE counts and totals to summary.txt) Tj T* (WRITE all errors to errors.log) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 460.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Working Python implementation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 437.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 10.9 Tm /F3 7.1 Tf 9 TL (from pathlib import Path) Tj T* (import csv) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 416.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (INPUT_FILES = [Path\("data"\) / f"department{i}.txt") Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 401.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (for i in range\(1, 6\)]) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 380.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (OUT = Path\("output"\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 298.9 Tm /F3 7.1 Tf 9 TL (def valid_email\(email\):) Tj T* (email = email.strip\(\)) Tj T* (if " " in email or email.count\("@"\) != 1:) Tj T* (return False) Tj T* (local, domain = email.split\("@"\)) Tj T* (return bool\(local\) and "." in domain and not domain.startswith\("."\) \\) Tj T* (and not domain.endswith\("."\)) Tj T* (def parse_registration\(line\):) Tj T* (fields = [part.strip\(\) for part in line.strip\(\).split\(","\)]) Tj T* (if len\(fields\) != 5:) Tj T* (raise ValueError\(f"expected 5 fields, found {len\(fields\)}"\)) Tj T* (reg, name, department, email, events_text = fields) Tj T* (if not reg or not name or not department:) Tj T* (raise ValueError\("register, name and department are required"\)) Tj T* (if not valid_email\(email\):) Tj T* (raise ValueError\("invalid e-mail address"\)) Tj T* (events = [event.strip\(\) for event in events_text.split\(";"\)) Tj T* (if event.strip\(\)]) Tj T* (return {) Tj T* ("register": reg, "name": name, "department": department,) Tj T* ("email": email, "events": events) Tj T* (}) Tj T* (def write_csv\(path, headers, rows\):) Tj T* (path.parent.mkdir\(parents=True, exist_ok=True\)) Tj T* (with open\(path, "w", encoding="utf-8", newline=""\) as file:) Tj T* (writer = csv.DictWriter\(file, fieldnames=headers\)) Tj T* (writer.writeheader\(\)) Tj T* (writer.writerows\(rows\)) Tj T* (def process_files\(files=INPUT_FILES\):) Tj T* (OUT.mkdir\(parents=True, exist_ok=True\)) Tj T* (accepted = {}) Tj T* (events = {}) Tj T* (errors = []) Tj T* (for path in files:) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 A\056 Mohamed Afridi) Tj
+T*
+ET
+BT
+1 0 0 1 432.0615 817.8898 Tm
+(Register No\072 1912260277) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+17 0 obj
+<<
+/Contents 26 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F1-0 6 0 R
+/F2 7 0 R
+/F2-0 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+18 0 obj
+<<
+/Length 4837
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 514.452 28.34646 Tm (Page 10) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 760.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 19.9 Tm /F3 7.1 Tf 9 TL (try:) Tj T* (with open\(path, "r", encoding="utf-8"\) as file:) Tj T* (for line_no, line in enumerate\(file, start=1\):) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 230.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 514.9 Tm /F3 7.1 Tf 9 TL (if not line.strip\(\):) Tj T* (continue) Tj T* (try:) Tj T* (student = parse_registration\(line\)) Tj T* (reg = student["register"]) Tj T* (if reg in accepted:) Tj T* (raise ValueError\() Tj T* (f"duplicate registration: {reg}") Tj T* (\)) Tj T* (accepted[reg] = student) Tj T* (for event in student["events"]:) Tj T* (events.setdefault\(event, []\).append\(student\)) Tj T* (except ValueError as error:) Tj T* (errors.append\() Tj T* (f"{path}:{line_no}: {error}") Tj T* (\)) Tj T* (except FileNotFoundError:) Tj T* (errors.append\(f"{path}: missing department file"\)) Tj T* (except PermissionError:) Tj T* (errors.append\(f"{path}: permission denied"\)) Tj T* (except UnicodeDecodeError:) Tj T* (errors.append\(f"{path}: invalid UTF-8 encoding"\)) Tj T* (except OSError as error:) Tj T* (errors.append\(f"{path}: file error: {error}"\)) Tj T* (master_rows = []) Tj T* (for student in accepted.values\(\):) Tj T* (master_rows.append\({) Tj T* ("register": student["register"],) Tj T* ("name": student["name"],) Tj T* ("department": student["department"],) Tj T* ("email": student["email"],) Tj T* ("events": ";".join\(student["events"]\)) Tj T* (}\)) Tj T* (headers = ["register", "name", "department", "email", "events"]) Tj T* (write_csv\(OUT / "master.csv", headers, master_rows\)) Tj T* (event_dir = OUT / "events") Tj T* (for event, participants in events.items\(\):) Tj T* (safe_name = "".join\() Tj T* (ch if ch.isalnum\(\) or ch in "-_" else "_") Tj T* (for ch in event) Tj T* (\)) Tj T* (rows = [{) Tj T* ("register": s["register"], "name": s["name"],) Tj T* ("department": s["department"], "email": s["email"]) Tj T* (} for s in participants]) Tj T* (write_csv\(event_dir / f"{safe_name}.csv",) Tj T* (["register", "name", "department", "email"], rows\)) Tj T* (with open\(OUT / "summary.txt", "w", encoding="utf-8"\) as file:) Tj T* (file.write\(f"Total valid registrations: {len\(accepted\)}\\\\n"\)) Tj T* (file.write\(f"Total events: {len\(events\)}\\\\n"\)) Tj T* (for event, participants in sorted\(events.items\(\)\):) Tj T* (file.write\(f"{event}: {len\(participants\)} participants\\\\n"\)) Tj T* (with open\(OUT / "errors.log", "w", encoding="utf-8"\) as file:) Tj T* (for error in errors:) Tj T* (file.write\(error + "\\\\n"\)) Tj T* (return len\(accepted\), len\(events\), errors) Tj T* (if __name__ == "__main__":) Tj T* (print\(process_files\(\)\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 200.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 5 \227 Demonstration test cases) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 75.70079 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 107.8 Tm /F1 9.2 Tf 13 TL (Create five sample department files and test: \(1\) all valid lines \227 every registration appears in master.csv; \(2\)) Tj T* (duplicate register number in two files \227 only the first is accepted and the later line is logged; \(3\) invalid e-mail such as) Tj T* (studentmail.com \227 line is rejected and logged; \(4\) damaged line with four fields \227 processing continues and the line) Tj T* (is logged; \(5\) missing department file \227 an error is recorded while the other files are processed. Confirm that event) Tj T* (files, summary.txt and errors.log are created. Alternative concept and complexity analysis Using a set of seen register) Tj T* (numbers gives O\(n\) average total duplicate-checking time for n registrations, with O\(n\) extra space. Searching a list of) Tj T* (all earlier registrations for every new registration can take O\(n\262\) time in the worst/average growth pattern, because) Tj T* -0.066312 Tw (each new record may scan many earlier records. A list uses O\(n\) space too. The set is therefore the better choice for a) Tj T* 0 Tw (large registration desk. Submission checklist) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 A\056 Mohamed Afridi) Tj
+T*
+ET
+BT
+1 0 0 1 432.0615 817.8898 Tm
+(Register No\072 1912260277) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+19 0 obj
+<<
+/Contents 27 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F1-0 6 0 R
+/F2 7 0 R
+/F2-0 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+20 0 obj
+<<
+/Length 1290
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 514.452 28.34646 Tm (Page 11) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 735.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 42.8 Tm /F1 9.2 Tf 13 TL (Run every program using your own sample input files. Keep source files, input files, output files and screenshots in) Tj T* (separate task folders. Add a README with Python version, execution commands and a short description of outputs.) Tj T* (The assignment instructions also require a GitHub repository with the specified naming format and progressive) Tj T* (commits; add the repository link to the report before submission.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 A\056 Mohamed Afridi) Tj
+T*
+ET
+BT
+1 0 0 1 432.0615 817.8898 Tm
+(Register No\072 1912260277) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+21 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+22 0 obj
+<<
+/Length 5810
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 6) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 769.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (PART 2 \227 TASKS 4\2266) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 739.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Task 4: File and Exception Forensics) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 717.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.1 \227 Locate the defects) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 646.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 55.8 Tm /F1 9.2 Tf 13 TL (1. The log is opened in write mode \('w'\), so every run erases earlier days. Use append mode \('a'\). 2. log.write\(b\) is) Tj T* (given a list instead of a string; it raises TypeError. 3. A newline is not added, so separate book names may be joined) Tj T* (together. 4. The file is closed only on the normal path; an error can leave it open. 5. The except block catches only) Tj T* (FileNotFoundError and does not save a useful error message. 6. If write\(\) fails, the program stops before closing the) Tj T* (log. 7. The code does not validate or report damaged input lines.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 624.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.2 \227 Test the defects) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 579.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 29.8 Tm /F1 9.2 Tf 13 TL (Run process\(\) for three daily files. The first file writes its book list, the second run overwrites the first day's data) Tj T* (because mode 'w' is used, and the third run can fail when write\(\) receives a list. A missing daily file prints 'missing' but) Tj T* (no error is recorded in the log. The repaired program below demonstrates all these cases safely.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 557.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.3 \227 Repaired program) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 318.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 226.9 Tm /F3 7.1 Tf 9 TL (from pathlib import Path) Tj T* (def save_returns\(books, log_name="returns.log"\):) Tj T* (with open\(log_name, "a", encoding="utf-8"\) as log:) Tj T* (for book in books:) Tj T* (log.write\(str\(book\).strip\(\) + "\\\\n"\)) Tj T* (def process\(day_file, log_name="returns.log",) Tj T* (error_name="returns_errors.log"\):) Tj T* (try:) Tj T* (with open\(day_file, "r", encoding="utf-8"\) as source:) Tj T* (books = [line.strip\(\) for line in source if line.strip\(\)]) Tj T* (save_returns\(books, log_name\)) Tj T* (return True) Tj T* (except FileNotFoundError:) Tj T* (message = f"Missing input file: {day_file}") Tj T* (except PermissionError:) Tj T* (message = f"Permission denied: {day_file}") Tj T* (except UnicodeDecodeError:) Tj T* (message = f"Invalid encoding: {day_file}") Tj T* (except OSError as error:) Tj T* (message = f"File error for {day_file}: {error}") Tj T* (with open\(error_name, "a", encoding="utf-8"\) as error_log:) Tj T* (error_log.write\(message + "\\\\n"\)) Tj T* (return False) Tj T* (if __name__ == "__main__":) Tj T* (for name in \("day1.txt", "day2.txt", "day3.txt"\):) Tj T* (process\(name\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 296.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 4.4 \227 Two prevention rules) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 212.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 68.8 Tm /F1 9.2 Tf 13 TL (1. Always use a with statement to open files so they are closed automatically, even when an exception occurs. 2.) Tj T* (Choose the correct file mode and write one string per record with a newline; validate data and log specific errors) Tj T* (instead of silently ignoring them. Alternative concept and complexity A with statement handles closing automatically.) Tj T* (Manual open\(\)/close\(\) inside try/finally can also be correct if close\(\) is placed in finally, but it is easier to forget. Both) Tj T* -0.109159 Tw (approaches have O\(n\) processing time for n book records and O\(1\) extra working space when records are streamed. If) Tj T* 0 Tw (an error occurs, a context manager reliably closes the file; manual closing depends on correct finally logic.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 182.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Task 5: The Same Utility Organised Four Ways) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 160.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 5.1 \227 Four organisations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 128.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.8 Tm /F1 9.2 Tf 13 TL (The attendance utility has three responsibilities: reading daily files, computing statistics and writing reports. The four) Tj T* (designs below use the same functions but organise them differently. A. One script \227 attendance_one.py) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 46.9 Tm /F3 7.1 Tf 9 TL (def read_attendance\(path\):) Tj T* (# Read and validate records; return a list of \(reg, date, status\).) Tj T* (records = []) Tj T* (with open\(path, encoding="utf-8"\) as file:) Tj T* (for line in file:) Tj T* (parts = line.strip\(\).split\(","\)) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 Jovin Josh) Tj
+T*
+ET
+BT
+1 0 0 1 437.34 817.8898 Tm
+(Register No\072 192511471) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+23 0 obj
+<<
+/Length 4760
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 7) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 625.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 154.9 Tm /F3 7.1 Tf 9 TL (if len\(parts\) == 3 and parts[2] in \("P", "A"\):) Tj T* (records.append\(tuple\(parts\)\)) Tj T* (return records) Tj T* (def compute_stats\(records\):) Tj T* (stats = {}) Tj T* (for reg, date, status in records:) Tj T* (stats.setdefault\(reg, {"P": 0, "A": 0}\)) Tj T* (stats[reg][status] += 1) Tj T* (return stats) Tj T* (def write_report\(stats, path\):) Tj T* (with open\(path, "w", encoding="utf-8"\) as file:) Tj T* (for reg, counts in sorted\(stats.items\(\)\):) Tj T* (total = counts["P"] + counts["A"]) Tj T* (percent = counts["P"] * 100 / total if total else 0) Tj T* (file.write\(f"{reg},{counts['P']},{counts['A']},{percent:.1f}%\\\\n"\)) Tj T* (if __name__ == "__main__":) Tj T* (data = read_attendance\("day1.csv"\)) Tj T* (write_report\(compute_stats\(data\), "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 603.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (B. One module imported by a main script) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 535.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 55.9 Tm /F3 7.1 Tf 9 TL (# attendance.py contains read_attendance, compute_stats, write_report) Tj T* (# main.py) Tj T* (import attendance) Tj T* (if __name__ == "__main__":) Tj T* (records = attendance.read_attendance\("day1.csv"\)) Tj T* (stats = attendance.compute_stats\(records\)) Tj T* (attendance.write_report\(stats, "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 514.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (C. Three modules in one folder attendance_project/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 409.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 91.9 Tm /F3 7.1 Tf 9 TL (main.py) Tj T* (reader.py       # read_attendance\(\)) Tj T* (stats.py        # compute_stats\(\)) Tj T* (report.py       # write_report\(\)) Tj T* (# main.py) Tj T* (from reader import read_attendance) Tj T* (from stats import compute_stats) Tj T* (from report import write_report) Tj T* (if __name__ == "__main__":) Tj T* (records = read_attendance\("day1.csv"\)) Tj T* (write_report\(compute_stats\(records\), "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 388.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (D. Package with submodules attendance/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 346.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 28.9 Tm /F3 7.1 Tf 9 TL (__init__.py) Tj T* (reader.py) Tj T* (stats.py) Tj T* (report.py) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 325.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (main.py) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 256.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 55.9 Tm /F3 7.1 Tf 9 TL (# main.py) Tj T* (from attendance.reader import read_attendance) Tj T* (from attendance.stats import compute_stats) Tj T* (from attendance.report import write_report) Tj T* (if __name__ == "__main__":) Tj T* (records = read_attendance\("day1.csv"\)) Tj T* (write_report\(compute_stats\(records\), "report.csv"\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 234.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 5.2 \227 Add the second report) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 202.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.8 Tm /F1 9.2 Tf 13 TL (Add a function to each design that identifies students absent for three consecutive days. The input records should be) Tj T* (ordered by date for each student. A simple implementation is:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 187.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (def absent_three_consecutive\(records\):) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 80.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 91.9 Tm /F3 7.1 Tf 9 TL (# records: \(register_number, date, status\), in date order) Tj T* (streak = {}) Tj T* (result = set\(\)) Tj T* (for reg, date, status in records:) Tj T* (if status == "A":) Tj T* (streak[reg] = streak.get\(reg, 0\) + 1) Tj T* (if streak[reg] >= 3:) Tj T* (result.add\(reg\)) Tj T* (else:) Tj T* (streak[reg] = 0) Tj T* (return sorted\(result\)) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 Jovin Josh) Tj
+T*
+ET
+BT
+1 0 0 1 437.34 817.8898 Tm
+(Register No\072 192511471) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+24 0 obj
+<<
+/Length 6837
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 8) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 761.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.8 Tm /F1 9.2 Tf 13 TL (Call this function after reading the monthly records and write its returned register numbers to a second file,) Tj T* (consecutive_absentees.txt. For the package design, place the function in stats.py and import it in main.py.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 739.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Task 5.3 \227 Compare the organisations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 577.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 146.8 Tm /F1 9.2 Tf 13 TL (A single script is easiest for a very small program but becomes difficult to read, test and maintain. One module) Tj T* (separates the main program from utility functions and supports reuse. Three modules separate reading, statistics and) Tj T* (reporting, so each can be tested independently. A package is the clearest choice for a growing project: it groups) Tj T* (related modules under one namespace and scales well. Avoid naming a module statistics.py if it may conflict with) Tj T* (Python's standard-library statistics module; use attendance_stats.py instead. Import attendance.stats loads the) Tj T* -0.025847 Tw (submodule; importing a function directly can make the call shorter. In general, modules are loaded once and cached in) Tj T* 0 Tw (sys.modules, so later imports reuse the loaded module. Alternative concept and complexity Keeping all functions in) Tj T* (one script avoids module-import overhead and is simplest to distribute, but changes to one part can affect the whole) Tj T* -0.074323 Tw (file. A package has a small one-time import cost and uses memory for loaded module objects, but does not change the) Tj T* 0 Tw (Big-O complexity of reading or processing attendance data. Finding a function is easier when responsibilities are) Tj T* (separated and names are clear. The same function should be changed in one module rather than copied into four) Tj T* (places.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 547.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Task 6: Design Challenge \227 College Fest Registration Desk) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 517.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 1 \227 Interpret the problem) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 444.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 55.8 Tm /F1 9.2 Tf 13 TL (Inputs: five department text files. Each valid line contains register number, name, department, e-mail and a) Tj T* (semicolon-separated event list. Outputs: a clean master list, one participant file per event, a summary report and an) Tj T* (error log. Testable rules: accept only complete records; validate e-mail format; remove duplicate registrations by) Tj T* (register number; preserve valid events; record damaged lines with source filename and line number; continue after a) Tj T* (missing file or bad line; create output files even when some inputs are missing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 414.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 2 \227 Processing flow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 354.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 42.8 Tm /F1 9.2 Tf 13 TL -0.115428 Tw (For each of the five department files: open it safely ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( read line by line ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( split fields ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( validate field count and required) Tj T* 0 Tw (values ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( validate e-mail ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( check duplicate register number ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( clean and store valid registration ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( add the student to) Tj T* (each selected event list. For each failure, write the reason to the error log and continue. After all files: write master list) Tj T* /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( write event-wise lists ) Tj /F4 9.2 Tf 13 TL (\256) Tj /F1 9.2 Tf 13 TL ( write summary counts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 324.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 3 \227 Critical design decisions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 251.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 55.8 Tm /F1 9.2 Tf 13 TL -0.02255 Tw (Duplicate rule: register number is the unique key. Store accepted register numbers in a set; set membership is O\(1\) on) Tj T* 0 Tw (average. E-mail validation: use string methods to check that there is exactly one '@', non-empty text before it, a dot in) Tj T* -0.05605 Tw (the domain, and no spaces. This is a simple classroom validation, not a complete internet e-mail standard. Exceptions:) Tj T* 0 Tw (catch FileNotFoundError, PermissionError, UnicodeDecodeError and other OSError around each input file; catch) Tj T* (malformed-line validation errors around each line. Log the file and line number.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 221.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 4 \227 Package structure) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 200.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (fest_registration/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 140.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 46.9 Tm /F3 7.1 Tf 9 TL (__init__.py) Tj T* (reader.py       # read_department_file\(\)) Tj T* (validator.py    # validate_record\(\), valid_email\(\)) Tj T* (processor.py    # remove_duplicates\(\), build_event_lists\(\)) Tj T* (writer.py       # write_master\(\), write_events\(\), write_summary\(\)) Tj T* (main.py         # coordinates the complete process) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 119.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (data/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 104.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (department1.txt ... department5.txt) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 83.70079 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (output/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (master.csv) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 Jovin Josh) Tj
+T*
+ET
+BT
+1 0 0 1 437.34 817.8898 Tm
+(Register No\072 192511471) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+25 0 obj
+<<
+/Length 4696
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 9) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 778.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (events/) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 752.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 10.9 Tm /F3 7.1 Tf 9 TL (summary.txt) Tj T* (errors.log) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 730.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Pseudocode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 482.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 235.9 Tm /F3 7.1 Tf 9 TL (INITIALISE accepted_by_register = {}) Tj T* (INITIALISE seen_registers = empty set) Tj T* (INITIALISE event_participants = empty dictionary) Tj T* (INITIALISE errors = empty list) Tj T* (FOR each department input file:) Tj T* (TRY to open file using UTF-8 and a with statement) Tj T* (IF file is missing or unreadable:) Tj T* (record file-level error; continue to next file) Tj T* (FOR each line and line number:) Tj T* (TRY:) Tj T* (split line into exactly 5 fields) Tj T* (strip whitespace from each field) Tj T* (validate register, name, department and e-mail) Tj T* (IF register is already in seen_registers:) Tj T* (record duplicate error; continue) Tj T* (add register to seen_registers) Tj T* (store cleaned student in accepted_by_register) Tj T* (split events using semicolon) Tj T* (FOR each non-empty event:) Tj T* (add student to event_participants[event]) Tj T* (EXCEPT invalid-record error:) Tj T* (record filename, line number and reason) Tj T* (WRITE accepted_by_register as master.csv) Tj T* (FOR each event:) Tj T* (WRITE its participants to a separate event file) Tj T* (WRITE counts and totals to summary.txt) Tj T* (WRITE all errors to errors.log) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 460.7008 cm
+q
+.168627 .298039 .403922 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Working Python implementation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 437.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 10.9 Tm /F3 7.1 Tf 9 TL (from pathlib import Path) Tj T* (import csv) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 416.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (INPUT_FILES = [Path\("data"\) / f"department{i}.txt") Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 401.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 1.9 Tm /F3 7.1 Tf 9 TL (for i in range\(1, 6\)]) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 380.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.8 Tm /F1 9.2 Tf 13 TL (OUT = Path\("output"\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.70079 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 298.9 Tm /F3 7.1 Tf 9 TL (def valid_email\(email\):) Tj T* (email = email.strip\(\)) Tj T* (if " " in email or email.count\("@"\) != 1:) Tj T* (return False) Tj T* (local, domain = email.split\("@"\)) Tj T* (return bool\(local\) and "." in domain and not domain.startswith\("."\) \\) Tj T* (and not domain.endswith\("."\)) Tj T* (def parse_registration\(line\):) Tj T* (fields = [part.strip\(\) for part in line.strip\(\).split\(","\)]) Tj T* (if len\(fields\) != 5:) Tj T* (raise ValueError\(f"expected 5 fields, found {len\(fields\)}"\)) Tj T* (reg, name, department, email, events_text = fields) Tj T* (if not reg or not name or not department:) Tj T* (raise ValueError\("register, name and department are required"\)) Tj T* (if not valid_email\(email\):) Tj T* (raise ValueError\("invalid e-mail address"\)) Tj T* (events = [event.strip\(\) for event in events_text.split\(";"\)) Tj T* (if event.strip\(\)]) Tj T* (return {) Tj T* ("register": reg, "name": name, "department": department,) Tj T* ("email": email, "events": events) Tj T* (}) Tj T* (def write_csv\(path, headers, rows\):) Tj T* (path.parent.mkdir\(parents=True, exist_ok=True\)) Tj T* (with open\(path, "w", encoding="utf-8", newline=""\) as file:) Tj T* (writer = csv.DictWriter\(file, fieldnames=headers\)) Tj T* (writer.writeheader\(\)) Tj T* (writer.writerows\(rows\)) Tj T* (def process_files\(files=INPUT_FILES\):) Tj T* (OUT.mkdir\(parents=True, exist_ok=True\)) Tj T* (accepted = {}) Tj T* (events = {}) Tj T* (errors = []) Tj T* (for path in files:) Tj T* ET
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 Jovin Josh) Tj
+T*
+ET
+BT
+1 0 0 1 437.34 817.8898 Tm
+(Register No\072 192511471) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+26 0 obj
+<<
+/Length 4824
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 514.452 28.34646 Tm (Page 10) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 760.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 19.9 Tm /F3 7.1 Tf 9 TL (try:) Tj T* (with open\(path, "r", encoding="utf-8"\) as file:) Tj T* (for line_no, line in enumerate\(file, start=1\):) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 230.7008 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 7 514.9 Tm /F3 7.1 Tf 9 TL (if not line.strip\(\):) Tj T* (continue) Tj T* (try:) Tj T* (student = parse_registration\(line\)) Tj T* (reg = student["register"]) Tj T* (if reg in accepted:) Tj T* (raise ValueError\() Tj T* (f"duplicate registration: {reg}") Tj T* (\)) Tj T* (accepted[reg] = student) Tj T* (for event in student["events"]:) Tj T* (events.setdefault\(event, []\).append\(student\)) Tj T* (except ValueError as error:) Tj T* (errors.append\() Tj T* (f"{path}:{line_no}: {error}") Tj T* (\)) Tj T* (except FileNotFoundError:) Tj T* (errors.append\(f"{path}: missing department file"\)) Tj T* (except PermissionError:) Tj T* (errors.append\(f"{path}: permission denied"\)) Tj T* (except UnicodeDecodeError:) Tj T* (errors.append\(f"{path}: invalid UTF-8 encoding"\)) Tj T* (except OSError as error:) Tj T* (errors.append\(f"{path}: file error: {error}"\)) Tj T* (master_rows = []) Tj T* (for student in accepted.values\(\):) Tj T* (master_rows.append\({) Tj T* ("register": student["register"],) Tj T* ("name": student["name"],) Tj T* ("department": student["department"],) Tj T* ("email": student["email"],) Tj T* ("events": ";".join\(student["events"]\)) Tj T* (}\)) Tj T* (headers = ["register", "name", "department", "email", "events"]) Tj T* (write_csv\(OUT / "master.csv", headers, master_rows\)) Tj T* (event_dir = OUT / "events") Tj T* (for event, participants in events.items\(\):) Tj T* (safe_name = "".join\() Tj T* (ch if ch.isalnum\(\) or ch in "-_" else "_") Tj T* (for ch in event) Tj T* (\)) Tj T* (rows = [{) Tj T* ("register": s["register"], "name": s["name"],) Tj T* ("department": s["department"], "email": s["email"]) Tj T* (} for s in participants]) Tj T* (write_csv\(event_dir / f"{safe_name}.csv",) Tj T* (["register", "name", "department", "email"], rows\)) Tj T* (with open\(OUT / "summary.txt", "w", encoding="utf-8"\) as file:) Tj T* (file.write\(f"Total valid registrations: {len\(accepted\)}\\\\n"\)) Tj T* (file.write\(f"Total events: {len\(events\)}\\\\n"\)) Tj T* (for event, participants in sorted\(events.items\(\)\):) Tj T* (file.write\(f"{event}: {len\(participants\)} participants\\\\n"\)) Tj T* (with open\(OUT / "errors.log", "w", encoding="utf-8"\) as file:) Tj T* (for error in errors:) Tj T* (file.write\(error + "\\\\n"\)) Tj T* (return len\(accepted\), len\(events\), errors) Tj T* (if __name__ == "__main__":) Tj T* (print\(process_files\(\)\)) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 200.7008 cm
+q
+.094118 .196078 .294118 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Stage 5 \227 Demonstration test cases) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 75.70079 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 107.8 Tm /F1 9.2 Tf 13 TL (Create five sample department files and test: \(1\) all valid lines \227 every registration appears in master.csv; \(2\)) Tj T* (duplicate register number in two files \227 only the first is accepted and the later line is logged; \(3\) invalid e-mail such as) Tj T* (studentmail.com \227 line is rejected and logged; \(4\) damaged line with four fields \227 processing continues and the line) Tj T* (is logged; \(5\) missing department file \227 an error is recorded while the other files are processed. Confirm that event) Tj T* (files, summary.txt and errors.log are created. Alternative concept and complexity analysis Using a set of seen register) Tj T* (numbers gives O\(n\) average total duplicate-checking time for n registrations, with O\(n\) extra space. Searching a list of) Tj T* (all earlier registrations for every new registration can take O\(n\262\) time in the worst/average growth pattern, because) Tj T* -0.066312 Tw (each new record may scan many earlier records. A list uses O\(n\) space too. The set is therefore the better choice for a) Tj T* 0 Tw (large registration desk. Submission checklist) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 Jovin Josh) Tj
+T*
+ET
+BT
+1 0 0 1 437.34 817.8898 Tm
+(Register No\072 192511471) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+27 0 obj
+<<
+/Length 1277
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.835294 .866667 .898039 RG
+.5 w
+n 51.02362 42.51969 m 544.252 42.51969 l S
+BT /F1 8 Tf 9.6 TL ET
+.321569 .380392 .435294 rg
+BT 1 0 0 1 51.02362 28.34646 Tm (SIMATS \226 Python Programming | Assignment 4) Tj T* ET
+BT 1 0 0 1 514.452 28.34646 Tm (Page 11) Tj T* ET
+Q
+q
+1 0 0 1 57.02362 735.7008 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 42.8 Tm /F1 9.2 Tf 13 TL (Run every program using your own sample input files. Keep source files, input files, output files and screenshots in) Tj T* (separate task folders. Add a README with Python version, execution commands and a short description of outputs.) Tj T* (The assignment instructions also require a GitHub repository with the specified naming format and progressive) Tj T* (commits; add the repository link to the report before submission.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 9.5 Tf
+11.4 TL
+ET
+0.1 g
+BT
+1 0 0 1 51 817.8898 Tm
+(Name\072 Jovin Josh) Tj
+T*
+ET
+BT
+1 0 0 1 437.34 817.8898 Tm
+(Register No\072 192511471) Tj
+T*
+ET
+BT
+/F1-0 9.5 Tf
+11.4 TL
+ET
+BT
+1 0 0 1 51 804.8898 Tm
+(Course Code\072 CSA0811) Tj
+T*
+ET
+BT
+1 0 0 1 515.4905 804.8898 Tm
+(Slot\072 C) Tj
+T*
+ET
+0.835 0.867 0.898 RG
+0.5 w
+n
+51 798.8898 m
+544 798.8898 l
+S
+Q
+
+
+endstream
+endobj
+xref
+0 28
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000158 00000 n 
+0000000435 00000 n 
+0000006310 00000 n 
+0000006417 00000 n 
+0000006524 00000 n 
+0000006636 00000 n 
+0000006748 00000 n 
+0000006853 00000 n 
+0000006931 00000 n 
+0000007209 00000 n 
+0000012035 00000 n 
+0000012313 00000 n 
+0000019216 00000 n 
+0000019494 00000 n 
+0000024256 00000 n 
+0000024534 00000 n 
+0000029424 00000 n 
+0000029702 00000 n 
+0000031045 00000 n 
+0000031085 00000 n 
+0000036948 00000 n 
+0000041761 00000 n 
+0000048651 00000 n 
+0000053400 00000 n 
+0000058277 00000 n 
+trailer
+<<
+/Size 28
+/Root 1 0 R
+/Info 21 0 R
+>>
+startxref
+59607
+%%EOF
